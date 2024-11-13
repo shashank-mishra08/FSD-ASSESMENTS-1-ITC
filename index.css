@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin:3rem;
+  }
+  
+
+  .product-box {
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    margin: 20px; 
+    padding: 2rem;
+  }
+  
+
+  .product-details {
+    padding: 20px; 
+  }
+  /* jab product wale box pe pointer jayega to wo bada ho jayega */
+  .product-box:hover {
+    transform: scale(1.05);
+  }
+  
+
+  .product-image {
+    padding: 2rem;
+    margin: 10px ;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #eee;
+  }
+  
+
+  .product-name {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 20px;
+  }
+  
+  .quantity-selector {
+    margin-bottom: 20px;
+  }
+  
+  .quantity-selector input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  
+ /* yahan pe hai button ka code================= */
+  .buy-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-btn:hover {
+    background-color: #2980b9;
+  }
+  
+
+  @media (max-width: 480px) {
+    .product-box {
+      width: 90%;
+      margin: 10px;
+    }
+  
+    .product-name {
+      font-size: 1.2em;
+    }
+  
+    .product-price {
+      font-size: 1em;
+    }
+  
+    .buy-btn {
+      font-size: 1em;
+    }
+  }
+  
